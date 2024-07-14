@@ -1,0 +1,471 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-font-family: "Sen", sans-serif;
+    --primary-color: #ffb900;
+    --secondary-color: #171100;
+    --third-color: #5f5b53;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font-family);
+}
+
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading {
+    color: var(--secondary-color);
+    font-weight: 700;
+    letter-spacing: -0.116rem;
+}
+
+.heading.lv1 {
+    font-size: 5.8rem;
+    line-height: 1.17;
+}
+
+.heading.lv2 {
+    font-size: 3.8rem;
+    line-height: 1.26;
+}
+
+.desc {
+    color: var(--third-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    background: var(--secondary-color);
+    padding: 12px 16px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+}
+
+/* Header */
+.header {
+    position: sticky;
+    top: -32px;
+    z-index: 1;
+    padding-top: 32px;
+    background: #fffcf4;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.navbar ul {
+    display: flex;
+    margin-left: auto;
+}
+
+.navbar li a {
+    padding: 8px 21px;
+    color: var(--third-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.navbar li:hover a {
+    color: var(--secondary-color);
+}
+
+.navbar li .active {
+    position: relative;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.navbar li .active::after {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    left: 21px;
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    border-radius: 3px;
+    background-color: var(--secondary-color);
+}
+
+.navbar .signup-btn {
+    min-width: 144px;
+    margin-left: 49px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    padding: 11px 16px;
+}
+
+/* Hero */
+.hero {
+    --illustrator-block-width: 48.7%;
+
+    padding-top: 52px;
+    padding-bottom: 65px;
+    background: #fffcf4;
+}
+
+.hero .content {
+    display: flex;
+}
+
+.hero .illustrator-block {
+    position: relative;
+    width: var(--illustrator-block-width);
+}
+
+.hero .info-block {
+    margin: auto;
+    padding-left: 130px;
+}
+
+.hero .intro-pic {
+    display: block;
+    width: 470px;
+    height: 685px;
+    margin-right: auto;
+    border-radius: 20px;
+    object-fit: cover;
+
+    /* display: inline; */
+    /* vertical-align: bottom; */
+}
+
+.hero .illustrator-block .courses-intro {
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    width: 270px;
+    height: 244px;
+    padding: 24px 58px 24px 24px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .illustrator-block .courses-intro .course-item {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.hero .illustrator-block .courses-intro .course-item:first-child {
+    margin-top: 0;
+}
+
+.hero .illustrator-block .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 50%;
+    background: #fff9e8;
+}
+
+.hero .illustrator-block .course-item:nth-child(2) .icon-wrapper {
+    background: #fcefff;
+}
+
+.hero .illustrator-block .course-item:nth-child(3) .icon-wrapper {
+    background: #ebeaff;
+}
+
+.hero .illustrator-block .course-icon {
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+}
+
+.hero .illustrator-block .course-info {
+    margin-left: 16px;
+}
+
+.hero .illustrator-block .course-info .course-total {
+    color: var(--third-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.hero .illustrator-block .course-info .course-name {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    white-space: nowrap;
+}
+
+.hero .info-block .heading {
+    width: 470px;
+}
+
+.hero .info-block .desc {
+    width: 470px;
+    margin-top: 22px;
+}
+
+.hero-cta {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.hero-cta .cta-btn {
+    min-width: 180px;
+    padding: 17px 16px;
+    border-radius: 32px;
+    background: var(--primary-color);
+
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.hero-cta .item-block {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+}
+
+.hero-cta .item-block .image-wrapper {
+    padding: 12px 14px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+}
+
+.hero-cta .image-wrapper .play-btn {
+    width: 12px;
+    height: 12px;
+}
+
+.hero-cta span {
+    margin-left: 14px;
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.hero .info-block .figure-desc {
+    display: block;
+    margin-top: 48px;
+}
+
+.hero .info-block .figure-info strong {
+    padding-right: 8px;
+    color: var(--secondary-color);
+    font-family: var(--heading-font-family);
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 1.22;
+}
+
+.hero .info-block .figure-info span {
+    color: var(--third-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.hero .info-block .figure-info span + span {
+    margin-left: 28px;
+}
+
+/* Course */
+#courses {
+    padding: 65px 0;
+    margin-top: 135px;
+}
+
+#courses .course-header {
+    display: flex;
+    align-items: center;
+}
+
+.course-header .control {
+    display: flex;
+    gap: 18px;
+    margin-left: auto;
+}
+
+.course-header .control .control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    color: var(--primary-color);
+}
+
+.course-header .control .control-btn:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+#courses > .desc {
+    width: 458px;
+    margin-top: 16px;
+}
+
+#courses .course-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 55px;
+}
+
+#courses .course-item {
+    flex: 1;
+    border: 1px solid #e2dfda;
+    border-radius: 12px;
+    background: #fff;
+}
+
+#courses .course-item:hover {
+    border-color: transparent;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+#courses .course-item .course-image {
+    width: calc(100% + 2px);
+    height: 278px;
+    margin: -1px;
+    border-radius: 12px 12px 0px 0px;
+    object-fit: cover;
+}
+
+#courses .course-item .course-detail {
+    padding: 16px 22px 22px;
+}
+
+.course-detail .course-general-info,
+.course-detail .rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-detail .course-name a {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.course-detail .rating .rating-figure {
+    margin-left: 6px;
+    color: #fea31b;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.course-detail .desc {
+    margin-top: 6px;
+    font-size: 1.4rem;
+}
+
+.course-payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.course-payment .price {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.course-payment .cta-payment {
+    border-radius: 25px;
+
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.86;
+}
+
+/* Reviews */
+#reviews {
+    height: 380px;
+    padding: 96px 0;
+    margin-top: 200px;
+    background: #2e2100;
+}
+
+#reviews .student-info .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+#reviews .student-info .student-name {
+    display: block;
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: var(--heading-font-family);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.42;
+}
+
+#reviews .student-info .student-course {
+    display: block;
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
