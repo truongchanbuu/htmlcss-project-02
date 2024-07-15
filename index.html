@@ -103,7 +103,7 @@
         </div>
 
         <!-- Courses -->
-        <div id="courses">
+        <div id="courses" class="courses">
             <div class="content">
                 <div class="course-header">
                     <div class="info">
@@ -136,13 +136,13 @@
                         </a>
                         <div class="course-detail">
                             <div class="course-general-info">
-                                <h3 class="course-name"><a href="#!">Basic web design</a></h3>
+                                <h3 class="course-name line-clamp"><a href="#!">Basic web design</a></h3>
                                 <div class="rating">
                                     <img src="./assets/images/star.svg" alt="star" class="icon">
                                     <span class="rating-figure">4.5</span>
                                 </div>
                             </div>
-                            <p class="desc">
+                            <p class="desc line-clamp" style="--line: 3">
                                 Get the best course, gain knowledge and shine for your future career.
                             </p>
                             <div class="course-payment">
@@ -158,8 +158,8 @@
                             <img class="course-image" src="./assets/images/courses/course-2.jpg" alt="UI/UX design">
                         </a>
                         <div class="course-detail">
-                            <h3 class="course-name"><a href="#!">UI/UX design</a></h3>
-                            <p class="desc">
+                            <h3 class="course-name line-clamp"><a href="#!">UI/UX design</a></h3>
+                            <p class="desc line-clamp" style="--line: 3">
                                 Get the best course, gain knowledge and shine for your future career.
                             </p>
                             <div class="course-payment">
@@ -175,8 +175,8 @@
                             <img class="course-image" src="./assets/images/courses/course-3.jpg" alt="Web App design">
                         </a>
                         <div class="course-detail">
-                            <h3 class="course-name"><a href="#!">Web App design</a></h3>
-                            <p class="desc">
+                            <h3 class="course-name line-clamp"><a href="#!">Web App design</a></h3>
+                            <p class="desc line-clamp" style="--line: 3">
                                 Get the best course, gain knowledge and shine for your future career.
                             </p>
                             <div class="course-payment">
@@ -190,20 +190,210 @@
         </div>
 
         <!-- Reviews -->
-        <div id="reviews">
+        <div id="reviews" class="reviews">
             <div class="content">
-                <div class="student-info">
-                    <img src="./assets/images/avatars/avatar-1.jpg" alt="" class="avatar">
-                    <span class="student-name">Peter Moor</span>
-                    <span class="student-course">Student of Web Design</span>
-                    <div class="slider"></div>
+                <div class="review-list">
+                    <!-- Item 1 -->
+                    <div class="review-item">
+                        <div class="student-info">
+                            <img src="./assets/images/avatars/avatar-1.jpg" alt="" class="avatar">
+                            <p class="student-name">Peter Moor</p>
+                            <p class="student-course">Student of Web Design</p>
+                            <div class="slider">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="student-quote">
+                            <img src="./assets/images/open-quote.svg" alt="open quote icon" class="open-quote">
+                            <blockquote>Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="review-item">
+                        <div class="student-info">
+                            <img src="./assets/images/avatars/avatar-1.jpg" alt="" class="avatar">
+                            <p class="student-name">Peter 1</p>
+                            <p class="student-course">Student of Marketing</p>
+                            <div class="slider">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="student-quote">
+                            <img src="./assets/images/open-quote.svg" alt="open quote icon" class="open-quote">
+                            <blockquote>Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="review-item">
+                        <div class="student-info">
+                            <img src="./assets/images/avatars/avatar-1.jpg" alt="" class="avatar">
+                            <p class="student-name">Peter 2</p>
+                            <p class="student-course">Student of Software Engineering</p>
+                            <div class="slider">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class="student-quote">
+                            <img src="./assets/images/open-quote.svg" alt="open quote icon" class="open-quote">
+                            <blockquote>Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </blockquote>
+                        </div>
+                    </div>
                 </div>
-                <div class="student-quote"></div>
             </div>
         </div>
-        <div class="results"></div>
-        <div id="pricing"></div>
-        <div class="blog"></div>
+       <!-- Features 1 -->
+        <div class="features">
+            <div class="content">
+                <div class="body">
+                    <div class="image-block">
+                        <img class="feature-image" src="./assets/images/features/feature-1.jpg" alt="Learner outcomes through our awesome platform">
+                        <img class="feature-image" src="./assets/images/features/feature-2.jpg" alt="Learner outcomes through our awesome platform">
+                    </div>
+                    <div class="info-block">
+                        <h2 class="heading lv2 line-clamp">Learner outcomes through our awesome platform</h2>
+                        <p class="desc line-clamp" style="--line: 3">87% of people learning for professional development report career benefits like getting a promotion, a raise, or starting a new career.</p>
+                        <p class="desc line-clamp" style="--line: 3">Lesson Impact Report (2022)</p>
+                        <button class="btn feature-cta">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features 2 -->
+        <div class="features features_2nd">
+            <div class="content">
+                <div class="body">
+                    <div class="info-block">
+                        <h2 class="heading lv2 line-clamp" style="--line: 3">Take the next step toward your personal and professional goals with Lesson.</h2>
+                        <p class="desc line-clamp" style="--line: 3">Take the next step toward. Join now to receive personalized  and more recommendations from the full Coursera catalog.</p>
+                        <button class="btn feature-cta">Join Now</button>
+                    </div>
+                    <div class="image-block">
+                        <img class="feature-image" src="./assets/images/features/feature-2.jpg" alt="Take the next step toward your personal and professional goals with Lesson.">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog">
+            <div class="content">
+                <h2 class="heading lv2">Our blog</h2>
+                <p class="desc">Read our regular travel blog and know the latest update of tour and travel</p>
+                <div class="blog-list">
+                    <div class="blog-item">
+                        <a href="#!">
+                            <img src="./assets/images/blog/blog-1.jpg" alt="How to become a pro web designer in 2022 and get remot job?" class="blog-item__image">
+                        </a>
+                        <div class="blog-item__info">
+                            <span class="date">21 November 2021</span>
+                            <h3 class="title"><a class="line-clamp" href="#!">How to become a pro web designer in 2022 and get remot job?</a></h3>
+                            <button class="btn blog-cta">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="blog-item">
+                        <a href="#!">
+                            <img src="./assets/images/blog/blog-2.jpg" alt="How to become a pro web designer in 2022 and get remot job?" class="blog-item__image">
+                        </a>
+                        <div class="blog-item__info">
+                            <span class="date">21 November 2021</span>
+                            <h3 class="title"><a class="line-clamp" href="#!">How to become a pro web designer in 2022 and get remot job?</a></h3>
+                            <button class="btn blog-cta">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="blog-item">
+                        <a href="#!">
+                            <img src="./assets/images/blog/blog-3.jpg" alt="How to become a pro web designer in 2022 and get remot job?" class="blog-item__image">
+                        </a>
+                        <div class="blog-item__info">
+                            <span class="date">21 November 2021</span>
+                            <h3 class="title"><a class="line-clamp" href="#!">How to become a pro web designer in 2022 and get remot job?</a></h3>
+                            <button class="btn blog-cta">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="blog-item">
+                        <a href="#!">
+                            <img src="./assets/images/blog/blog-1.jpg" alt="How to become a pro web designer in 2022 and get remot job?" class="blog-item__image">
+                        </a>
+                        <div class="blog-item__info">
+                            <span class="date">21 November 2021</span>
+                            <h3 class="title"><a class="line-clamp" href="#!">How to become a pro web designer in 2022 and get remot job?</a></h3>
+                            <button class="btn blog-cta">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="blog-item">
+                        <a href="#!">
+                            <img src="./assets/images/blog/blog-2.jpg" alt="How to become a pro web designer in 2022 and get remot job?" class="blog-item__image">
+                        </a>
+                        <div class="blog-item__info">
+                            <span class="date">21 November 2021</span>
+                            <h3 class="title"><a class="line-clamp" href="#!">How to become a pro web designer in 2022 and get remot job?</a></h3>
+                            <button class="btn blog-cta">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="blog-item">
+                        <a href="#!">
+                            <img src="./assets/images/blog/blog-3.jpg" alt="How to become a pro web designer in 2022 and get remot job?" class="blog-item__image">
+                        </a>
+                        <div class="blog-item__info">
+                            <span class="date">21 November 2021</span>
+                            <h3 class="title"><a class="line-clamp" href="#!">How to become a pro web designer in 2022 and get remot job?</a></h3>
+                            <button class="btn blog-cta">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="blog-item">
+                        <a href="#!">
+                            <img src="./assets/images/blog/blog-1.jpg" alt="How to become a pro web designer in 2022 and get remot job?" class="blog-item__image">
+                        </a>
+                        <div class="blog-item__info">
+                            <span class="date">21 November 2021</span>
+                            <h3 class="title"><a class="line-clamp" href="#!">How to become a pro web designer in 2022 and get remot job?</a></h3>
+                            <button class="btn blog-cta">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="blog-item">
+                        <a href="#!">
+                            <img src="./assets/images/blog/blog-2.jpg" alt="How to become a pro web designer in 2022 and get remot job?" class="blog-item__image">
+                        </a>
+                        <div class="blog-item__info">
+                            <span class="date">21 November 2021</span>
+                            <h3 class="title"><a class="line-clamp" href="#!">How to become a pro web designer in 2022 and get remot job?</a></h3>
+                            <button class="btn blog-cta">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="blog-item">
+                        <a href="#!">
+                            <img src="./assets/images/blog/blog-3.jpg" alt="How to become a pro web designer in 2022 and get remot job?" class="blog-item__image">
+                        </a>
+                        <div class="blog-item__info">
+                            <span class="date">21 November 2021</span>
+                            <h3 class="title"><a class="line-clamp" href="#!">How to become a pro web designer in 2022 and get remot job?</a></h3>
+                            <button class="btn blog-cta">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <span class="dot"></span>
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="footer"></footer>
