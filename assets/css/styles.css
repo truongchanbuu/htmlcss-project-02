@@ -711,22 +711,13 @@ h2 {
 }
 
 .footer .title {
-    position: relative;
+    display: inline-block;
+    padding: 0 48px 14px 0;
+    border-bottom: 1px solid #59554B;
     color: #fff;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75;
-}
-
-.footer .title::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -14px;
-    display: inline-block;
-    width: 130px;
-    height: 1px;
-    background: #59554B;
 }
 
 .footer-top {
@@ -734,13 +725,21 @@ h2 {
     gap: 0 130px;
 }
 
+.footer-top .column {
+    width: 21.6%;
+}
+
+.footer-top .column:first-child {
+    width: 40%;
+}
+
+.footer .service-list {
+    margin-top: 28px;
+}
+
 .footer .service-item {
     margin-top: 12px;
     white-space: nowrap;
-}
-
-.footer .service-item:first-child {
-    margin-top: 43px;
 }
 
 .footer-top .column .desc,
@@ -755,6 +754,11 @@ h2 {
 
 .footer-top .column .desc {
     margin: 18px 0;
+    max-width: 267px;
+}
+
+.footer .column:last-child .service-item {
+    max-width: 211px;
 }
 
 .footer .service-item b {
